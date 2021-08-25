@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment2</title>
+        <link rel="icon" href="icon.png" type="image/png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+          .heading{
+              color:whitesmoke; 
+              font-weight: bold; 
+              font-size: 3vw;
+          }
+
+          .maincontainer{
+              background-image: url('wallpaper1.png');
+              background-repeat:no-repeat;  
+              background-size: cover; 
+              background-position: center; 
+              height: 420px;
+          }
+
+          #coupon_box{
+            position: fixed;
+            display: block;
+            width: 40%; 
+            height: 48%;
+            top: 10%;
+            left: 25%;
+            right: 0;
+            bottom: 0;
+            background-color:darkslategray;
+            opacity: 0.9; 
+            color: white;
+            z-index: 2; 
+            cursor: pointer;
+            text-align: center;
+          }
+
+          #coupn_block{
+            position: relative;
+            top:10%;
+            left:20%;
+            bottom:0;
+
+          }
+
+          .coupon1{
+            width:50%;
+            height:50%;
+            border:2px solid black;
+            margin-bottom: 20px;
+            padding:10px 10px 10px 10px grey;
+            color:white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px grey;
+          }
+
+          .text{
+              color:navy;
+              font-weight: bold;
+              font-size: 20px;
+          }
+
+          .logo{
+              background-color:white; 
+              width:110px; 
+              height:110px; 
+              border-radius:50%; 
+              font-size: 70px; 
+              font-weight: bold;
+          }
+
+          .tilecontainer{
+              background-color:cornsilk; 
+              box-shadow: 5px 5px 10px grey;
+              margin-left:20px;
+              margin-top:10px;
+          }
+        </style>
+    </head>
+
+    <body style="background-color:lightgray;">
+
+      <!----------Coupon Box---------->
+      <div id="coupon_box">
+        <h3>Get a coupon code for discount</h3>
+        <div id="coupn_block">
+          <div class="coupon1">
+            <h4>Edu50</h4>
+            <button>Apply</button>
+          </div>
+          <div class="coupon1">
+            <h4>Zomo50</h4>
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
+
+      <div class="container-fluid">
+
+        <div class="container-fluid maincontainer">
+          
+          <div class="clearfix">
+            
+            <div class="p-3 float-right">
+              <button type="button" class="btn btn-outline-light text-light;">Log In</button>
+              <button type="button" class="btn btn-outline-light text-light;">Create an account</button>
+            </div>
+
+          </div>
+
+          <div class="p-1 d-flex justify-content-center">
+            <span class="mb-3 d-flex justify-content-center logo">e!</span>
+          </div>
+
+          <div class="container d-flex justify-content-center heading">
+            Find The Best Restaurent, Cafes and Bars
+          </div>
+
+          <div class="container d-flex justify-content-center">
+
+              <!-----search area----->
+              <form>
+                <!-- Search location -->
+                <select style="width:39%;" name="Location" class="custom-select">
+                  <option selected> Select Location </option>
+                  <option value="lucknow"> lucknow </opnotion>
+                  <option value="chandigarh"> Chandigarh </option>
+                  <option value="Uttar Pradesh"> Uttar Pradesh </option>
+                </select>
+                
+                <!-- Search Restaurent -->
+                <select style="width:59%;" name="Dish_Name" class="custom-select">
+                  <option selected> Select Restaurent</option>
+                  <option value="Wow momos">Wow momos</option>
+                  <option value="Cool Home">Cool Home</option>
+                  <option value="Mehman Restaurent">Mehman Restaurent</option>
+                </select>
+              </form>
+
+          </div>
+
+        </div>
+        <!-------container------->
+        <div class="container-fluid p-4 ml-4">
+          <!------Text Format------>
+          <div class="container-fluid" style="font-size:20px; font-weight: bold;">
+            <h2 class="ml-4" style="color:navy; font-weight: bold;">Quick Searches</h2>
+            <p class="ml-4" style="color:slategray;">Discover Restaurent By the Type Of Meal</p>
+          </div>
+          <!-----Container1----->
+          <div class="container-fluid p-2">
+            <!-----In First Row----->
+            <div class="row">
+              <!-----col-1 container1-1---->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="breakfast.png" width="180px" height="200px" ></div>
+                <div class="text mb-2 mt-2">Breakfast</div>
+                <div style="color:slategray;">Start your day ,<br>with our<br> exclusive <br>breakfast options.</div>
+              </div>
+              <!-----col-2 container1-2----->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="lunch.png" width="180px" height="200px"></div>
+                <div class="text mb-2 mt-2" mb-2>Lunch</div>
+                <div style="color:slategray;">Lunch stay fall<br>with our never<br>ending hoarde of<br>luncheon</div>
+              </div>
+              <!------col-3 container1-3----->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="snacks.png" width="180px" height="200px"></div>
+                <div class="text mb-2 mt-2">Snacks</div>
+                <div style="color:slategray;">Trust yourself<br>with endless<br>bursts of tanginess,<br>sourness<br>spiceness.</div>
+              </div>
+
+              <!-----col-4 container2-1----->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="dinner.png" width="180px" height="200px"></div>
+                <div class="text mb-2 mt-2">Dinner</div>
+                <div style="color:slategray;">End your day<br>with an aromatic<br>and befining bite.</div>
+              </div>
+              <!-----col-5 container2-2----->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="drinks.png" width="180px" height="200px"></div>
+                <div class="text mb-2 mt-2">Drinks</div>
+                <div style="color:slategray;">Wash away all<br>your stress with<br>our eloquent<br>booze.</div>
+              </div>
+              <!------col-6 container2-3----->
+              <div class="col-md-5 col-xs-12 col-lg-3 tilecontainer">
+                <div style="float:left;" class="mr-2"><img src="nightlife.png" width="180px" height="200px"></div>
+                <div class="text mb-2 mt-2">Nightlife</div>
+                <div style="color:slategray;">Come celebrate <br>all kinds of<br>occassions with<br>friends and<br>family.</div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </body>
+</html>
